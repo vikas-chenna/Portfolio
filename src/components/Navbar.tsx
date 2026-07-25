@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
-import { Download, Menu, Moon, Sun, X } from 'lucide-react';
-import { useTheme } from '../context/ThemeContext';
-import type { PersonalInfo } from '../types';
+import React, { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import { Download, Menu, Moon, Sun, X } from "lucide-react";
+import { useTheme } from "../context/ThemeContext";
+import type { PersonalInfo } from "../types";
 
 interface NavbarProps {
   personal: PersonalInfo;
@@ -21,69 +21,68 @@ export const Navbar: React.FC<NavbarProps> = ({ personal }) => {
 
     handleScroll();
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   const navLinks = [
-    { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Education', href: '#education' },
-    { name: 'Certifications', href: '#certifications' },
-    { name: 'GitHub', href: '#github' },
-    { name: 'Contact', href: '#contact' },
+    { name: "About", href: "#about" },
+    { name: "Skills", href: "#skills" },
+    { name: "Projects", href: "#projects" },
+    { name: "Experience", href: "#experience" },
+    { name: "Education", href: "#education" },
+    { name: "Certifications", href: "#certifications" },
+    { name: "GitHub", href: "#github" },
+    { name: "Contact", href: "#contact" },
   ];
 
   const handleNavigation = (
     event: React.MouseEvent<HTMLAnchorElement>,
-    href: string
+    href: string,
   ) => {
     event.preventDefault();
 
     setMobileMenuOpen(false);
 
-    const section = document.querySelector(href);
+    window.setTimeout(() => {
+      const section = document.querySelector(href);
 
-    if (section) {
-      section.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
+      if (section) {
+        section.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
 
-      window.history.replaceState(null, '', href);
-    }
+        window.history.replaceState(null, "", href);
+      }
+    }, 250);
   };
 
-  const handleHomeNavigation = (
-    event: React.MouseEvent<HTMLAnchorElement>
-  ) => {
+  const handleHomeNavigation = (event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
 
     setMobileMenuOpen(false);
 
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
 
-    window.history.replaceState(null, '', window.location.pathname);
+    window.history.replaceState(null, "", window.location.pathname);
   };
 
   return (
     <header
       className={`fixed left-0 right-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'border-b border-slate-200/80 bg-white/80 py-3 shadow-sm backdrop-blur-xl dark:border-white/10 dark:bg-slate-950/80 dark:shadow-none'
-          : 'bg-transparent py-5'
+          ? "border-b border-slate-200/80 bg-white/80 py-3 shadow-sm backdrop-blur-xl dark:border-white/10 dark:bg-slate-950/80 dark:shadow-none"
+          : "bg-transparent py-5"
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-
         {/* Brand */}
         <a
           href="#"
@@ -124,24 +123,19 @@ export const Navbar: React.FC<NavbarProps> = ({ personal }) => {
 
         {/* Actions */}
         <div className="flex items-center gap-2 sm:gap-3">
-
           {/* Theme Toggle */}
           <button
             type="button"
             onClick={toggleTheme}
             aria-label={
-              theme === 'dark'
-                ? 'Switch to light mode'
-                : 'Switch to dark mode'
+              theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
             }
             title={
-              theme === 'dark'
-                ? 'Switch to light mode'
-                : 'Switch to dark mode'
+              theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
             }
             className="flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 bg-white/70 text-slate-600 transition-all hover:border-blue-300 hover:bg-blue-50 hover:text-blue-600 dark:border-white/10 dark:bg-white/5 dark:text-slate-300 dark:hover:border-blue-500/30 dark:hover:bg-blue-500/10 dark:hover:text-blue-400"
           >
-            {theme === 'dark' ? (
+            {theme === "dark" ? (
               <Sun className="h-4 w-4" />
             ) : (
               <Moon className="h-4 w-4" />
@@ -163,9 +157,7 @@ export const Navbar: React.FC<NavbarProps> = ({ personal }) => {
             type="button"
             onClick={() => setMobileMenuOpen((prev) => !prev)}
             aria-label={
-              mobileMenuOpen
-                ? 'Close navigation menu'
-                : 'Open navigation menu'
+              mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"
             }
             aria-expanded={mobileMenuOpen}
             className="flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 bg-white/70 text-slate-600 transition-all hover:bg-slate-100 dark:border-white/10 dark:bg-white/5 dark:text-slate-300 dark:hover:bg-white/10 lg:hidden"
@@ -176,7 +168,6 @@ export const Navbar: React.FC<NavbarProps> = ({ personal }) => {
               <Menu className="h-5 w-5" />
             )}
           </button>
-
         </div>
       </div>
 
@@ -185,20 +176,17 @@ export const Navbar: React.FC<NavbarProps> = ({ personal }) => {
         {mobileMenuOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
+            animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.2 }}
             className="overflow-hidden border-b border-slate-200 bg-white/95 backdrop-blur-xl dark:border-white/10 dark:bg-slate-950/95 lg:hidden"
           >
             <nav className="mx-auto flex max-w-7xl flex-col px-6 py-5">
-
               {navLinks.map((link) => (
                 <a
                   key={link.name}
                   href={link.href}
-                  onClick={(event) =>
-                    handleNavigation(event, link.href)
-                  }
+                  onClick={(event) => handleNavigation(event, link.href)}
                   className="border-b border-slate-100 py-3 text-sm font-medium text-slate-700 transition-colors hover:text-blue-600 dark:border-white/5 dark:text-slate-300 dark:hover:text-blue-400"
                 >
                   {link.name}
@@ -214,7 +202,6 @@ export const Navbar: React.FC<NavbarProps> = ({ personal }) => {
                 <Download className="h-4 w-4" />
                 <span>Download Resume</span>
               </a>
-
             </nav>
           </motion.div>
         )}
