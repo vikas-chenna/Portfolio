@@ -258,7 +258,7 @@ return ( <section className="relative flex min-h-screen items-center overflow-hi
 
           <a
             href={personal.resumeUrl}
-            download="Vikas_Someshwar_Chenna_Resume.pdf"
+            download="Vikas_Chenna_Resume.pdf"
             className="flex flex-1 items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white/70 px-6 py-3.5 text-sm font-semibold text-slate-700 transition-all hover:bg-slate-100 dark:border-white/10 dark:bg-white/5 dark:text-slate-300 dark:hover:bg-white/10 sm:flex-none"
           >
             <Download className="h-4 w-4" />

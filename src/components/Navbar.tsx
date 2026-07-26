@@ -145,7 +145,7 @@ export const Navbar: React.FC<NavbarProps> = ({ personal }) => {
           {/* Resume Desktop */}
           <a
             href={personal.resumeUrl}
-            download="Vikas_Someshwar_Chenna_Resume.pdf"
+            download="Vikas_Chenna_Resume.pdf"
             className="hidden items-center gap-2 rounded-xl bg-blue-600 px-4 py-2.5 text-xs font-semibold text-white transition-all hover:bg-blue-700 active:scale-95 dark:bg-blue-500 dark:hover:bg-blue-400 sm:flex"
           >
             <Download className="h-3.5 w-3.5" />
@@ -195,7 +195,7 @@ export const Navbar: React.FC<NavbarProps> = ({ personal }) => {
 
               <a
                 href={personal.resumeUrl}
-                download="Vikas_Someshwar_Chenna_Resume.pdf"
+                download="Vikas_Chenna_Resume.pdf"
                 onClick={() => setMobileMenuOpen(false)}
                 className="mt-5 flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 py-3 text-sm font-semibold text-white transition-colors hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-400"
               >
