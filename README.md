@@ -1,32 +1,59 @@
-# React + TypeScript + Vite
+# Vikas Chenna — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Personal portfolio website showcasing my projects, technical skills, education, and experience as an MCA student and Full Stack Developer.
 
-Currently, two official plugins are available:
+## 🌐 Live Portfolio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[Visit my portfolio](https://vikaschennaportfolio.vercel.app/)
 
-## React Compiler
+## 👨‍💻 About Me
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+I'm an MCA student and Full Stack Developer interested in building practical web applications and learning modern software development technologies.
 
-## Expanding the Oxlint configuration
+Currently working with React, JavaScript, Node.js, Express.js, MongoDB, PHP, MySQL, and related web technologies.
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## 🛠️ Tech Stack
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+* React
+* JavaScript
+* HTML
+* CSS
+* Tailwind CSS
+* Node.js
+* Express.js
+* MongoDB
+* PHP
+* MySQL
+* Git & GitHub
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## 🚀 Featured Projects
+
+### InsightAI
+
+AI-powered Business Intelligence Dashboard for managing and analyzing business data such as products, customers, inventory, expenses, and revenue.
+
+**Technologies:** React, Node.js, Express.js, MongoDB, Tailwind CSS, OpenRouter API
+
+### Plantastic Events
+
+Web-based event management system with separate Admin, Organizer, and Customer modules.
+
+**Technologies:** HTML, CSS, JavaScript, Bootstrap, PHP, MySQL, PHPMailer
+
+## 🎓 Education
+
+**Master of Computer Applications (MCA)**
+Veer Narmad South Gujarat University, Surat
+
+**Bachelor of Computer Applications (BCA)**
+Bhagwan Mahavir College of Computer Application, Surat
+
+## 📫 Contact
+
+* Email: [work.vikaschenna@gmail.com](mailto:work.vikaschenna@gmail.com)
+* LinkedIn: [LinkedIn](https://linkedin.com/in/vikaschenna/)
+* GitHub: [GitHub](https://github.com/vikas-chenna)
+
+---
+
+Built with React and deployed on Vercel.
