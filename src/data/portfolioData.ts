@@ -130,7 +130,7 @@ export const fallbackPortfolioData: PortfolioData = {
       github: "https://github.com/vikas-chenna/InsightAI-Project",
       demo: "https://insightai-project-delta.vercel.app/",
       featured: true,
-      badge: "Live",
+      badge:  "AI & React Platform",
     },
     {
       id: "nexus-compiler",
