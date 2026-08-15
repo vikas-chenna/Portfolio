@@ -67,13 +67,6 @@
       "icon": "SiNodedotjs"
     },
     {
-      "name": "Java Servlets",
-      "category": "Backend",
-      "level": 70,
-      "icon": "FaJava",
-      "status": "Learning"
-    },
-    {
       "name": "MySQL",
       "category": "Database",
       "level": 88,
@@ -99,29 +92,10 @@
       "icon": "SiPhp"
     },
     {
-      "name": "C",
-      "category": "Programming",
-      "level": 80,
-      "icon": "SiC"
-    },
-    {
       "name": "C++",
       "category": "Programming",
       "level": 82,
       "icon": "SiCplusplus"
-    },
-    {
-      "name": "Python",
-      "category": "Programming",
-      "level": 78,
-      "icon": "SiPython",
-      "status": "Learning"
-    },
-    {
-      "name": "C#",
-      "category": "Programming",
-      "level": 75,
-      "icon": "SiCsharp"
     },
     {
       "name": "Git & GitHub",
@@ -213,7 +187,7 @@
         "Cloud database persistence via MongoDB Atlas",
         "Deployed on Vercel with lightning-fast initial load times"
       ],
-      "github": "https://github.com/vikas-chenna",
+      "github": "https://github.com/vikas-chenna/InsightAI-Project",
       "demo": "https://insightai-project-delta.vercel.app/",
       "featured": true,
       "badge": "AI & React Platform"
