@@ -124,9 +124,7 @@ export const Skills: React.FC<SkillsProps> = ({ skills }) => {
                     </div>
                   </div>
 
-                  <span className="shrink-0 text-xs font-mono font-semibold text-slate-600 dark:text-slate-300">
-                    {skill.level}%
-                  </span>
+                  
                 </div>
 
                 {skill.status && (
@@ -136,19 +134,6 @@ export const Skills: React.FC<SkillsProps> = ({ skills }) => {
                 )}
               </div>
 
-              {/* Progress */}
-              <div className="mt-3 h-2 w-full overflow-hidden rounded-full bg-slate-100 dark:bg-white/5">
-                <motion.div
-                  initial={{ width: 0 }}
-                  whileInView={{ width: `${skill.level}%` }}
-                  viewport={{ once: true }}
-                  transition={{
-                    duration: 0.9,
-                    ease: "easeOut",
-                  }}
-                  className="h-full rounded-full bg-gradient-to-r from-cyan-500 to-blue-600"
-                />
-              </div>
             </motion.div>
           ))}
         </div>

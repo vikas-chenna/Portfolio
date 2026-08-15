@@ -15,7 +15,6 @@ export interface PersonalInfo {
 export interface SkillItem {
   name: string;
   category: 'Frontend' | 'Backend' | 'Database' | 'Programming' | 'Tools';
-  level: number;
   icon: string;
   status?: string;
 }

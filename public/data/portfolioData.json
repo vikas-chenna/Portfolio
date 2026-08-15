@@ -14,129 +14,98 @@
       "PHP & Node.js Developer",
       "MCA Student @ VNSGU"
     ],
-    "aboutBio": "I am a passionate Full Stack Developer and MCA student dedicated to crafting modern, scalable, and high-performance web applications. With expertise spanning modern frontend frameworks like React and Vite, backend engineering with Node.js and PHP, robust databases, and AI platform integrations, I bridge the gap between elegant UI design and clean system architecture.",
+    "aboutBio": "I am a passionate Full Stack Developer and MCA student dedicated to crafting modern, scalable, and high-performance web applications. With expertise spanning modern frontend frameworks like React and Tailwind CSS, backend engineering with Node.js and PHP, robust databases, and AI platform integrations, I bridge the gap between elegant UI design and clean system architecture.",
     "careerObjective": "To leverage my skills in full-stack web engineering, database architecture, and artificial intelligence to build transformative digital products for industry-leading tech companies and high-growth startups."
   },
   "skills": [
     {
       "name": "HTML5 / CSS3",
       "category": "Frontend",
-      "level": 95,
       "icon": "SiHtml5"
     },
     {
       "name": "JavaScript (ES6+)",
       "category": "Frontend",
-      "level": 90,
       "icon": "SiJavascript"
     },
     {
       "name": "React",
       "category": "Frontend",
-      "level": 88,
       "icon": "SiReact"
     },
     {
       "name": "Tailwind CSS",
       "category": "Frontend",
-      "level": 92,
       "icon": "SiTailwindcss"
-    },
-    {
-      "name": "Vite",
-      "category": "Frontend",
-      "level": 85,
-      "icon": "SiVite"
     },
     {
       "name": "Bootstrap",
       "category": "Frontend",
-      "level": 90,
       "icon": "SiBootstrap"
     },
     {
       "name": "PHP",
       "category": "Backend",
-      "level": 88,
       "icon": "SiPhp"
     },
     {
       "name": "Node.js",
       "category": "Backend",
-      "level": 82,
       "icon": "SiNodedotjs"
     },
     {
       "name": "MySQL",
       "category": "Database",
-      "level": 88,
       "icon": "SiMysql"
     },
     {
       "name": "MongoDB Atlas",
       "category": "Database",
-      "level": 84,
-      "icon": "SiMongodb",
-      "status": "Learning"
+      "icon": "SiMongodb"
     },
     {
       "name": "Java",
       "category": "Programming",
-      "level": 85,
       "icon": "FaJava"
-    },
-    {
-      "name": "PHP",
-      "category": "Programming",
-      "level": 88,
-      "icon": "SiPhp"
     },
     {
       "name": "C++",
       "category": "Programming",
-      "level": 82,
       "icon": "SiCplusplus"
     },
     {
       "name": "Git & GitHub",
       "category": "Tools",
-      "level": 90,
       "icon": "SiGithub"
     },
     {
       "name": "VS Code",
       "category": "Tools",
-      "level": 95,
       "icon": "SiVisualstudiocode"
     },
     {
       "name": "Postman",
       "category": "Tools",
-      "level": 86,
       "icon": "SiPostman"
     },
     {
       "name": "XAMPP",
       "category": "Tools",
-      "level": 88,
       "icon": "SiXampp"
     },
     {
       "name": "Android Studio",
       "category": "Tools",
-      "level": 72,
       "icon": "SiAndroidstudio"
     },
     {
       "name": "NetBeans",
       "category": "Tools",
-      "level": 75,
       "icon": "SiApache"
     },
     {
       "name": "Visual Studio",
       "category": "Tools",
-      "level": 78,
       "icon": "SiVisualstudio"
     }
   ],
@@ -168,15 +137,16 @@
       "badge": "Full Stack PHP/MySQL"
     },
     {
-      "id": "insight-ai",
-      "title": "Insight AI",
-      "tagline": "AI-Powered Business Intelligence & Analytics Platform",
-      "description": "Insight AI is a cutting-edge SaaS intelligence tool designed to transform raw metrics into actionable strategic insights using Large Language Models via OpenRouter API with a sleek glassmorphic dashboard.",
+      "id": "insightai",
+      "title": "InsightAI",
+      "tagline": "AI-Powered Business Intelligence Dashboard",
+      "description": "InsightAI is an AI-powered business intelligence dashboard for managing and analyzing products, customers, inventory, expenses, and business data. It uses an OpenRouter-powered AI assistant to generate business insights and recommendations.",
       "technologies": [
         "React",
         "Vite",
         "Tailwind CSS",
         "Node.js",
+        "Express.js",
         "MongoDB Atlas",
         "OpenRouter API"
       ],
@@ -184,8 +154,8 @@
         "Generative AI business insight generator powered by OpenRouter API",
         "Real-time analytics visualization with modern charts and metrics",
         "Scalable backend API structure with Node.js and Express",
-        "Cloud database persistence via MongoDB Atlas",
-        "Deployed on Vercel with lightning-fast initial load times"
+        "MongoDB Atlas integration for storing and managing application data",
+        "Deployed on Vercel with a live production demo"
       ],
       "github": "https://github.com/vikas-chenna/InsightAI-Project",
       "demo": "https://insightai-project-delta.vercel.app/",
