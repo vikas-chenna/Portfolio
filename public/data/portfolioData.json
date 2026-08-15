@@ -162,7 +162,7 @@
         "Automated booking confirmation and notification emails via PHPMailer",
         "Responsive, mobile-optimized UI built with Bootstrap and vanilla JavaScript"
       ],
-      "github": "https://github.com/vikas-chenna",
+      "github": "https://github.com/vikas-chenna/Plantastic-Events",
       "demo": "",
       "featured": true,
       "badge": "Full Stack PHP/MySQL"
@@ -194,9 +194,9 @@
     },
     {
       "id": "nexus-compiler",
-      "title": "Nexus Code Execution Engine",
+      "title": "Developer code playground — currently under construction",
       "tagline": "Real-time web code playground for Java, PHP, and C++",
-      "description": "A developer-first online code editor and sandbox environment allowing developers to test, format, and execute snippets in Java, PHP, C, and Python directly from the browser.",
+      "description": "A developer-focused online code playground currently under construction, planned to support code editing, formatting, and execution directly from the browser.",
       "technologies": [
         "React",
         "Tailwind CSS",
@@ -213,7 +213,7 @@
       "github": "https://github.com/vikas-chenna",
       "demo": "",
       "featured": false,
-      "badge": "Developer Tool"
+      "badge": "Under Construction"
     }
   ],
   "experience": [
