@@ -51,7 +51,7 @@ Bhagwan Mahavir College of Computer Application, Surat
 ## 📫 Contact
 
 * Email: [work.vikaschenna@gmail.com](mailto:work.vikaschenna@gmail.com)
-* LinkedIn: [LinkedIn](https://linkedin.com/in/vikaschenna/)
+* LinkedIn: [LinkedIn](https://www.linkedin.com/in/vikaschenna)
 * GitHub: [GitHub](https://github.com/vikas-chenna)
 
 ---
